@@ -1,0 +1,42 @@
+{
+  "version": "0.13.0",
+  "elf_sha256": "10fc53397816dbc230e641be39c3894d43bf76b4e73c436f07c0b29f367af6a7",
+  "date": "2026-10-19",
+  "firmware": "5.50",
+  "firmware_raw": "0x05500008",
+  "scope": "Short functional test on this PS5 and Mojo 2; second streaming session still active when log fetched",
+  "user_confirmed": [
+    "ELF start/stop with HDMI restoration",
+    "Mojo playback while HDMI muted",
+    "Powering off active Mojo restores TV audio",
+    "Powering on Mojo automatically resumes playback and mutes TV"
+  ],
+  "log_confirmed": {
+    "hdmi_ipc_preflight": true,
+    "hdmi_mute_success": true,
+    "hdmi_unmute_success": true,
+    "usb_detach_detected": true,
+    "capture_restarted_successfully": true,
+    "completed_first_session_us": 4646804,
+    "completed_out_packets": 37120,
+    "capture_errors": 0,
+    "capture_overruns": 0,
+    "pcm_underruns": 0,
+    "pcm_dropped_frames": 3584
+  },
+  "expected_disconnect_errors": "USB_FS complete/stop/close/uninit returned ENXIO (6) on power-off; capture cleanup and HDMI restoration succeeded, then device/capture reopened",
+  "not_tested": [
+    "Long-session stability/drift",
+    "Rest mode/resume",
+    "Process-crash HDMI recovery on console",
+    "Other firmware or DACs"
+  ],
+  "manifest_updates": {
+    "console_tested": true,
+    "hdmi_console_tested": true,
+    "reconnect_console_tested": true,
+    "power_button_behavior_tested": true,
+    "relaunch_stop_console_tested": true,
+    "console_test_scope": "Short functional test; user-confirmed mute/unmute, power-button reconnect and ELF stop. Long-session/rest-mode/crash tests pending."
+  }
+}

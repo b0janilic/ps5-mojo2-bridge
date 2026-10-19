@@ -1,0 +1,12 @@
+/build/
+/vendor/
+/dist/
+/captures/
+/research/
+/.ps5-local.json
+/payloads/audio-device-probe/
+/tools/audio_device_probe.py
+/tests/mbus_info.c
+__pycache__/
+*.pyc
+.DS_Store

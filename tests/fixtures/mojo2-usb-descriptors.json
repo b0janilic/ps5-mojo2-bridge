@@ -1,0 +1,113 @@
+{
+  "vendor_id": 9311,
+  "product_id": 2069,
+  "bcd_usb": 512,
+  "bcd_device": 407,
+  "speed_enum": 3,
+  "configurations": [
+    {
+      "index": 0,
+      "value": 1,
+      "total_length": 176,
+      "attributes": 64,
+      "max_power": 0,
+      "extra_hex": "",
+      "interfaces": [
+        {
+          "number": 0,
+          "alt": 0,
+          "class": 255,
+          "subclass": 255,
+          "protocol": 0,
+          "extra_hex": "",
+          "endpoints": [
+            {
+              "address": 2,
+              "attributes": 2,
+              "max_packet_size": 512,
+              "interval": 0,
+              "refresh": 0,
+              "sync_address": 0,
+              "extra_hex": "080b010201002000"
+            }
+          ]
+        },
+        {
+          "number": 1,
+          "alt": 0,
+          "class": 1,
+          "subclass": 1,
+          "protocol": 32,
+          "extra_hex": "09240100020148000008240a290307000208240b28012903021124022a010100280200000000000000001224060a2a0f0000000f0000000f000000000c24032b0103000a28000000",
+          "endpoints": []
+        },
+        {
+          "number": 2,
+          "alt": 0,
+          "class": 1,
+          "subclass": 2,
+          "protocol": 32,
+          "extra_hex": "",
+          "endpoints": []
+        },
+        {
+          "number": 2,
+          "alt": 1,
+          "class": 1,
+          "subclass": 2,
+          "protocol": 32,
+          "extra_hex": "1024012a0001010000000203000000000624020104200825010000020800",
+          "endpoints": [
+            {
+              "address": 5,
+              "attributes": 5,
+              "max_packet_size": 1024,
+              "interval": 1,
+              "refresh": 0,
+              "sync_address": 0,
+              "extra_hex": ""
+            },
+            {
+              "address": 129,
+              "attributes": 17,
+              "max_packet_size": 4,
+              "interval": 4,
+              "refresh": 0,
+              "sync_address": 0,
+              "extra_hex": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "value": 2,
+      "total_length": 25,
+      "attributes": 64,
+      "max_power": 0,
+      "extra_hex": "",
+      "interfaces": [
+        {
+          "number": 0,
+          "alt": 0,
+          "class": 255,
+          "subclass": 255,
+          "protocol": 0,
+          "extra_hex": "",
+          "endpoints": [
+            {
+              "address": 2,
+              "attributes": 2,
+              "max_packet_size": 512,
+              "interval": 0,
+              "refresh": 0,
+              "sync_address": 0,
+              "extra_hex": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
